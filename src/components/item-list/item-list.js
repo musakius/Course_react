@@ -58,16 +58,10 @@ class ItemList extends Component {
 }
 
 const PeopleView = ({ people }) => {
-  const nameAll = [];
-
-  for (let i = 0; i < people.length; i++) {
-    nameAll.push(people[i].name);
-  }
-
-  const listName = nameAll.map((name) => {
+  const listName = people.map((item) => {
     return (
-      <li className="list-group-item" key={name}>
-        {name}
+      <li className="list-group-item" key={item.name}>
+        {item.name}
       </li>
     );
   });
