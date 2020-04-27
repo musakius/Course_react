@@ -8,7 +8,6 @@ const initialState = {
 };
 
 const reducer = (state = initialState, action) => {
-  console.log(action.label);
   switch (action.type) {
     case "ADD_TASK":
       return { data: [...state.data, action.payload], value: "" };
