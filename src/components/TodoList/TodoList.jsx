@@ -3,7 +3,6 @@ import { connect } from "react-redux";
 import s from "./TodoList.module.css";
 
 const TodoList = ({ todo }) => {
-  console.log(todo);
   const elements = todo.map((item) => {
     const { id, label } = item;
     return (
@@ -17,7 +16,6 @@ const TodoList = ({ todo }) => {
 };
 
 const mapStateToProps = (state) => {
-  console.log(state);
   return {
     todo: state.data,
   };
