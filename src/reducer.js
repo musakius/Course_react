@@ -3,7 +3,6 @@ const initialState = {
     { label: "Drink Coffee", id: 1 },
     { label: "Go to a meeting", id: 2 },
     { label: "Cash withdraw", id: 3 },
-    { label: "Cash withdraw", id: 9 },
   ],
   value: "",
 };
