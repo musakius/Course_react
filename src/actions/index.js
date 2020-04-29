@@ -1,11 +1,12 @@
 const booksLoaded = (newBooks) => {
-  if (newBooks) {
+  if (newBooks === undefined) {
+    throw new Error("Request failed: for books");
+  } else {
     return {
       type: "BOOKS_LOADED",
       payload: newBooks,
     };
   }
-  throw new Error("Request failed: for books");
 };
 
 const booksLoading = () => {
