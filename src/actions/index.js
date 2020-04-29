@@ -19,7 +19,6 @@ const booksError = (error) => {
   console.log(error);
   return {
     type: "BOOKS_ERROR",
-    payload: String(error),
   };
 };
 

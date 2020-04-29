@@ -5,7 +5,6 @@ const initialState = {
   numberOfBooks: 0,
   loading: true,
   error: false,
-  errorMessage: "",
 };
 
 const updateCart = (state, action, amount) => {
@@ -62,7 +61,6 @@ const reducer = (state = initialState, action) => {
         ...state,
         loading: false,
         error: true,
-        errorMessage: action.payload,
       };
     case "ALL_BOOKS_REMOVED_FROM_CART":
       const bookId = action.payload;
