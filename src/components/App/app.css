@@ -1,0 +1,45 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 80px auto;
+  background-color: #fff;
+}
+
+.app_header {
+  text-align: center;
+}
+
+.list-error {
+  margin-left: 45px;
+}
+
+.error {
+  margin: 10px;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: inherit;
+  color: rgb(129, 14, 14);
+}
+
+.app_header h1 {
+  font-size: 40px;
+  font-family: inherit;
+  font-weight: 900;
+}
+ul {
+  padding: 10px;
+  list-style-type: none;
+  background-color: #f0feff;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+li {
+  font-size: 20px;
+  font-weight: 900;
+  padding: 10px;
+  margin: 10px;
+  background-color: #d9feff;
+  border: 2px solid black;
+  border-radius: 3px;
+}
